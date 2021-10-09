@@ -7,10 +7,19 @@ from .models import Simulation_Project , Video_Project
 # Create your views here.
 
 def home(request):
-    return HttpResponse("This is Home page")
+
+     Simulation_project_object = Simulation_Project.objects.all()
+
+
+     paginator= Paginator(Simulation_project_object,9) 
+     page = request.GET.get('page')
+     Simulation_project_object = paginator.get_page(page)
+
+     return render(request ,'phyApp/simulations.html' , {'Simulation_project_object':Simulation_project_object})
+
 
 def about(request):
-    return render(request ,'about.html')
+    return render(request , 'phyApp/about.html' )
 
 def hardware(request):
      Video_project_object = Video_Project.objects.all()
@@ -25,7 +34,7 @@ def hardware(request):
      page = request.GET.get('page')
      Video_project_object = paginator.get_page(page)
 
-     return render(request ,'videos.html' , {'Video_project_object':Video_project_object})
+     return render(request ,'phyApp/videos.html' , {'Video_project_object':Video_project_object})
 
 def detail(request , id):
      project = Simulation_Project.objects.filter(id=id)
@@ -33,5 +42,5 @@ def detail(request , id):
      Video_project_object = Video_Project.objects.all()
      Simulation_project_object = Simulation_Project.objects.all()
 
-     return render(request ,'detail.html' , {'Simulation_project_object':Simulation_project_object , 'Video_project_object':Video_project_object , 'project' : project[0]})
+     return render(request ,'phyApp/detail.html' , {'Simulation_project_object':Simulation_project_object , 'Video_project_object':Video_project_object , 'project' : project[0]})
      

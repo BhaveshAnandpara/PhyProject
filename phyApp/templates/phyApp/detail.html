@@ -1,0 +1,37 @@
+{% extends 'phyApp/base.html' %}
+
+{% load static %}
+
+{% block link %}
+
+   
+     <link rel="stylesheet" href="{% static 'phyApp/base.css' %}">
+     <link rel="stylesheet" href="{% static 'phyApp/detail.css' %}">
+     <script src="{% static 'phyApp/base.js'%}"></script>
+ 
+
+{% endblock %}
+
+
+
+{% block body %}
+
+  <div class="container-detail ">
+
+    <h1>{{project.project_name}}</h1>
+    <p>By {{project.author_name}}</p>
+
+    <a class="youtube" href="{{project.youtube_link}}">
+        <img  src="{% static "phyApp/images/icon/youtube.svg" %}" alt="">
+    </a>
+
+    <iframe width="560" height="315" src="{{project.geogebra_link}}"  frameborder="0"   allowfullscreen></iframe>
+
+  </div>
+       
+
+{% endblock%}
+
+
+
+

@@ -1,0 +1,36 @@
+{% extends 'phyApp/base.html' %}
+
+{% load static %}
+
+{% block link %}
+
+   
+     <link rel="stylesheet" href="{% static 'phyApp/base.css' %}">
+     <link rel="stylesheet" href="{% static 'phyApp/about.css' %}">
+     <script src="{% static 'phyApp/base.js'%}"></script>
+ 
+
+{% endblock %}
+
+
+
+{% block body%}
+
+    <div class="about-container">
+
+        <h1>
+            ABOUT US
+        </h1>
+
+        <p>
+            'PhyProject' is a Project done by Students of First year of Bajaj Institute of Technology , Wardha . Under The Guidence of Prof. Vijay Deshmukh . All the Projects Either Simulations or Videos are done by First year Students of Bajaj Institue of Technology , Wardha .
+        </p>
+
+        <p>
+            The Main Purpose of This Website is to accomodate all the Physics Projects and made Availble for all Students . The Simulations And Videos help Understand the Topic More Easily .
+        </p>
+
+
+    </div>
+
+{% endblock %}
