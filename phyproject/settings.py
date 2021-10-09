@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['https://phyproject.herokuapp.com',
 # Application definition
 
 INSTALLED_APPS = [
+    'phyApp'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
