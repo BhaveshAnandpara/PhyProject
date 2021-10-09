@@ -1,1 +1,1 @@
-web gunicorn phyApp:wsgi
+web: gunicorn phyproject.wsgi:application --log-file - --log-level debug
