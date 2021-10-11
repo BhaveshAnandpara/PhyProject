@@ -1,0 +1,97 @@
+
+
+
+.card-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+
+}
+
+
+.card{
+    overflow: hidden;
+
+    display: block;
+    height: 40vh;
+    width: 27vw;
+    background-color: #F1F1F1;
+
+
+
+    border: 2px solid #ccc;
+    box-shadow: 4px 4px 20px 0 #ccc;
+
+    cursor: pointer;
+    
+}
+
+.media{
+
+    display: block;
+    width: 100%;
+    height: 70%;
+
+    overflow: hidden;
+}
+
+.media > img {
+    
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transform: scale(1.2);
+
+}
+
+
+.project_name {
+
+    padding: 10px;
+
+    text-align: center;
+    
+    height: 30%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    color: #45478A;
+    letter-spacing: 2px;
+    font-size : 18px;
+    
+
+}
+
+.holder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+
+
+}
+
+.top-nav {
+    margin-bottom: 20vh;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90vw;
+}
+
+li {
+    margin: 10px;
+
+}
+
