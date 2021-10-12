@@ -95,3 +95,30 @@ li {
 
 }
 
+
+
+@media screen and (max-width: 768px){
+
+    .holder{
+        grid-template-columns: auto;
+    }
+
+
+
+   .card{
+       width: 90%;
+       height: 95%;
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+
+   .top-nav {
+    margin-bottom: 5vh;
+}
+
+.card-holder{
+    margin-bottom: 5vh;
+}
+
+}
