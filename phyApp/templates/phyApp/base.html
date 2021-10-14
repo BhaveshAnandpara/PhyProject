@@ -5,7 +5,7 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,10 +49,10 @@
 
     <div class="top-nav-items ">
 
-    <img class="icon " onclick="navFunctionOpen()" src="{% static "phyApp/images/icons/hamburger.svg" %}" alt="hamburger">
+    <img class="icon hamburger " onclick="navFunctionOpen()" src="{% static "phyApp/images/icons/hamburger.svg" %}" alt="hamburger">
     <img class="logo " src="{% static "phyApp/images/icons/PhyProject.svg" %}" alt="logo">
-    <a href="/about/">
-        <img class="icon search" href="" src="{% static "phyApp/images/icons/help-circle.svg" %}" alt="">
+    <a href="/about/" class="icon search ">
+        <img class="" href="" src="{% static "phyApp/images/icons/help-circle.svg" %}" alt="">
     </a>
 </div>    
     
