@@ -14,8 +14,8 @@
     overflow: hidden;
 
     display: block;
-    height: 260px;
-    width: 340px;
+    /* height: 260px; */
+    /* width: 340px; */
     background-color: #F1F1F1;
 
 
@@ -43,6 +43,12 @@
     width: 100%;
     background-size: cover;
     transform: scale(1.2);
+
+}
+
+iframe{
+    display: block;
+    background-size: cover;
 
 }
 
@@ -106,8 +112,10 @@ li {
 
 
    .card{
-       width: 90%;
-       height: 95%;
+       /* width: 90%;
+       height: 95%; */
+       display: block;
+
        position: absolute;
        left: 50%;
        transform: translateX(-50%);

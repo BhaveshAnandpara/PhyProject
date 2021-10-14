@@ -25,7 +25,7 @@
 {% for object in Video_project_object %}
 
 
-<div class="card-holder ">
+{% comment %} <div class="card-holder ">
 
 
     <div class="card">
@@ -44,6 +44,31 @@
         </div>
 
     </div>
+
+</div> {% endcomment %}
+
+<div class="card-holder ">
+
+
+    <a href="/detail/{{object.id}}" class="card-a">
+
+      <div class="card">
+
+        <div class="media">
+            <iframe height="100%" width="100%" src="{{object.youtube_link}}" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="project_name ">
+        <span>
+            {{object.project_name}}
+        </span>
+
+        </div>
+
+    </div>
+
+  </a>
 
 </div>
 
