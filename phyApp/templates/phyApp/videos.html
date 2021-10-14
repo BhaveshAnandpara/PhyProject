@@ -27,8 +27,29 @@
 
 <div class="card-holder ">
 
+   <a href="/detail/{{object.id}}" class="card-a">
 
-    <div class="card">
+      <div class="card">
+
+        <div class="media">
+            <iframe height="100%" width="100%" src="{{object.youtube_link}}" frameborder="0"></iframe>
+        </div>
+
+
+        <div class="project_name ">
+        <span>
+            {{object.project_name}}
+        </span>
+
+        </div>
+
+    </div>
+
+  </a>
+
+
+
+    {% comment %} <div class="card">
 
         <div class="media">
             <iframe height="100%" width="100%" src="{{object.youtube_link}}" frameborder="0"></iframe>
@@ -43,7 +64,7 @@
 
         </div>
 
-    </div>
+    </div> {% endcomment %}
 
 </div>
 

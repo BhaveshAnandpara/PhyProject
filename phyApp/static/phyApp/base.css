@@ -149,7 +149,7 @@ body , html{
 }
 
 .nav-items {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 
@@ -164,23 +164,3 @@ body , html{
     }
 }
 
-
-
-
-
-@media only screen and (max-width: 1024px) and (max-height: 1366px) {
-
-.nav {
-        width: 100%;
-        height : 100vh;
-
-}
-
-.nav-items {
-    font-size: 4rem;
-}
-
-
-
-
-}
