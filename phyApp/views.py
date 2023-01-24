@@ -21,6 +21,7 @@ def home(request):
 def about(request):
     return render(request , 'phyApp/about.html' )
 
+
 def hardware(request):
      Video_project_object = Video_Project.objects.all()
 

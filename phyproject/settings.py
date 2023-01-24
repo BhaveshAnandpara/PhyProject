@@ -32,7 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['https://phyproject.herokuapp.com',
 'localhost',
 '127.0.0.1',
-
+'.vercel.app'
 ]
 
 
